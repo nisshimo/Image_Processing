@@ -10,4 +10,6 @@ img = cv2.imread("imori.jpg")
 
 img2 = img.copy()
 img2[:, :] = img[:, :, (2, 1, 0)]
-cv2.imshow('', img2); cv2.waitKey(5000)
+
+# 結果の出力
+cv2.imwrite("ans_1.jpg", img2)
