@@ -184,6 +184,7 @@ def median_filter(img, stride=3):
                 out[i, j, k] = np.median(subregion)
     return out
 
+
 def main():
     img = cv2.imread("../imori_noise.jpg").astype(np.float64)
     img_ = median_filter(img)
