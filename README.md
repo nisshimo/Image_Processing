@@ -1,4 +1,5 @@
 # Image-Processing
+
 [画像処理100本ノック](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14)をやってみる。
 
 ## 進捗
@@ -31,7 +32,7 @@
 | 24 | ガンマ補正 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve24.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_24.png) |
 | 25 | 最近傍補間 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve25.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_25.png) |
 | 26 | Bi-linear補間 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve26.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_26.png) |
-| 27 | Bi-cubic補間 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve27.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_27.png) |
+| 27 | Bi-cubic補間 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve27.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_27.png) |
 | 28 | アフィン変換(平行移動) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve28.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_28.png) |
 | 29 | アフィン変換(拡大縮小) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve29.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_29.png) |
 | 30 | アフィン変換(回転) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve30.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_30.png) |
@@ -106,7 +107,5 @@
 | 99 | 簡単な物体検出 (Step.3) Non-Maximum Suppression | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve99.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_99.png) |
 | 100 | 簡単な物体検出 (Step.4) 評価 Precision, Recall, F-score, mAP | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve100.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_100.png) |
 
-
 ## 参考および引用元
-[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>
-[画像処理100本ノック(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>
+[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>[画像処理100本ノック(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>
