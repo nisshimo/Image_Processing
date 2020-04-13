@@ -17,4 +17,4 @@ with open("README.md", mode='w') as f:
         link_png = "[{}](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_{}.png)".format(marker, str(i+1).zfill(2))
         f.write("| {} | {} | {} | {} |\n".format(i+1, subject, link_code, link_png))
 
-    f.write("\n## 参考および引用元\n[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>[画像処理100本ノック(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>\n")
+    f.write("\n## 参考および引用元\n[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>[画像処理100本ノック!!(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>\n")
