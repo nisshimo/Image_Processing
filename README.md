@@ -33,9 +33,9 @@
 | 25 | 最近傍補間 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve25.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_25.png) |
 | 26 | Bi-linear補間 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve26.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_26.png) |
 | 27 | Bi-cubic補間 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve27.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_27.png) |
-| 28 | アフィン変換(平行移動) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve28.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_28.png) |
-| 29 | アフィン変換(拡大縮小) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve29.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_29.png) |
-| 30 | アフィン変換(回転) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve30.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_30.png) |
+| 28 | アフィン変換(平行移動) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve28.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_28.png) |
+| 29 | アフィン変換(拡大縮小) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve29.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_29.png) |
+| 30 | アフィン変換(回転) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve30.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_30.png) |
 | 31 | アフィン変換(スキュー) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve31.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_31.png) |
 | 32 | フーリエ変換 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve32.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_32.png) |
 | 33 | フーリエ変換 ローパスフィルタ | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve33.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_33.png) |
@@ -108,4 +108,4 @@
 | 100 | 簡単な物体検出 (Step.4) 評価 Precision, Recall, F-score, mAP | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve100.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_100.png) |
 
 ## 参考および引用元
-[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>[画像処理100本ノック(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>
+[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>[画像処理100本ノック!!(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>
