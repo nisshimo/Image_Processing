@@ -13,7 +13,7 @@ def C(u):
 def dct(img, T=8):
     H, W, channels = img.shape
 
-    F = np.zeros_like(img, dtype=np.float64)
+    F = np.zeros_like(img, dtype=np.float32)
     for x_ in range(0, W, T):
         for y_ in range(0, H, T):
             for u in range(T):
@@ -28,7 +28,7 @@ def dct(img, T=8):
 def idct(F, T=8, K=8):
     H, W, channels = F.shape
     
-    f = np.zeros_like(F, dtype=np.float64)
+    f = np.zeros_like(F, dtype=np.float32)
     for c in range(channels):
         for x_ in range(0, W, T):
             for y_ in range(0, H, T):
@@ -41,7 +41,7 @@ def idct(F, T=8, K=8):
 
 
 def main():
-    img_in = cv2.imread("../img/in/imori.jpg").astype(np.float64).copy()
+    img_in = cv2.imread("../img/in/imori.jpg").astype(np.float32).copy()
     F = dct(img_in)
     print("dct done!")
     img_ = idct(F)

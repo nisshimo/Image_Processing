@@ -28,11 +28,10 @@ def main():
     img_yvbcr = RGB2YCbCr(img_in)
     F = dct(img_yvbcr)
 
-
-    F = quantile(F, Q2, 0)
-    F = quantile(F, Q2, 1)
-    F = quantile(F, Q1, 2)
-    img_ = idct(F, K=8)
+    F = quantile(F, Q1, 0)
+    F = quantile(F, Q1, 1)
+    F = quantile(F, Q2, 2)
+    img_ = YCbCr2RGB(idct(F, K=8))
     img_out = np.clip(img_, 0, 255).astype(np.uint8)
     cv2.imwrite("../img/out/q_40.jpg", img_out)
 
