@@ -4,18 +4,23 @@ from solve20 import hist_of_pixels
 
 
 # Q_28
-def affine_conversion(img, a=1, b=1, A=0, tx=0, ty=0):
+def affine_conversion(img, a=1, b=1, c=0, d=0, A=0, tx=0, ty=0):
     H, W, C = img.shape
 
     A = np.radians(A)
-    H_ = np.round(H * a).astype(np.int)
-    W_ = np.round(W * b).astype(np.int)
+    H_ = np.round(H * a + c).astype(np.int)
+    W_ = np.round(W * b + d).astype(np.int)
 
     x_ = np.repeat(np.arange(H_), W_).reshape(H_, -1)
     y_ = np.tile(np.arange(W_), (H_, 1))
+    
+    s = a*np.cos(A)
+    t = -a*np.sin(A) + c / H
+    u = b * np.sin(A) + d / W
+    v = b * np.cos(A)
 
-    x = (b*np.cos(A) * x_ + a*np.sin(A) * y_) / (a * b) - tx
-    y = (a*np.cos(A) * y_ - b*np.sin(A) * x_) / (a * b) - ty
+    x = (v * x_ - t * y_) / (s * v - t * u) - tx
+    y = (s * y_ - u * x_) / (s * v - t * u) - ty
 
     is_black_x = np.where((x < 0) | (x >= H), True, False)
     is_black_y = np.where((y < 0) | (y >= W), True, False)

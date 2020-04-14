@@ -1,7 +1,7 @@
 from subjects import subjects
 
 marker_default = '✓'
-n_done = 30
+n_done = 35
 
 with open("README.md", mode='w') as f:
     f.write("# Image-Processing\n\n")
