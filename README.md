@@ -36,11 +36,11 @@
 | 28 | アフィン変換(平行移動) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve28.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_28.png) |
 | 29 | アフィン変換(拡大縮小) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve29.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_29.png) |
 | 30 | アフィン変換(回転) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve30.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_30.png) |
-| 31 | アフィン変換(スキュー) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve31.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_31.png) |
-| 32 | フーリエ変換 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve32.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_32.png) |
-| 33 | フーリエ変換 ローパスフィルタ | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve33.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_33.png) |
-| 34 | フーリエ変換 ハイパスフィルタ | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve34.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_34.png) |
-| 35 | フーリエ変換 バンドパスフィルタ | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve35.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_35.png) |
+| 31 | アフィン変換(スキュー) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve31.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_31.png) |
+| 32 | フーリエ変換 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve32.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_32.png) |
+| 33 | フーリエ変換 ローパスフィルタ | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve33.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_33.png) |
+| 34 | フーリエ変換 ハイパスフィルタ | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve34.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_34.png) |
+| 35 | フーリエ変換 バンドパスフィルタ | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve35.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_35.png) |
 | 36 | JPEG圧縮 (Step.1)離散コサイン変換 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve36.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_36.png) |
 | 37 | PSNR | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve37.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_37.png) |
 | 38 | JPEG圧縮 (Step.2)DCT+量子化 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve38.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_38.png) |
