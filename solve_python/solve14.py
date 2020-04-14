@@ -33,7 +33,7 @@ def main():
     for mode in ['v', 'h']:
         img_ = differential_filter(img_in, mode=mode)
         img_out = np.clip(img_, 0, 255).astype(np.uint8)
-        cv2.imwrite("../img/out/q_14_{}.png".format(mode), img_out)
+        cv2.imwrite("../img/out/q_14_{}.jpg".format(mode), img_out)
 
 
 if __name__ == '__main__':

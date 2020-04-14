@@ -36,7 +36,7 @@ def main():
     G_ = bandpass_filter(G, r_high=0.5)
     img_ = idft(G_)
     img_out = np.clip(img_, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_33.png", img_out)
+    cv2.imwrite("../img/out/q_33.jpg", img_out)
 
 
 if __name__ == '__main__':

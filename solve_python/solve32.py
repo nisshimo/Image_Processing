@@ -40,11 +40,11 @@ def main():
     img_in = cv2.imread("../img/in/imori.jpg").astype(np.float64).copy()
     G = dft(img_in)
     G_scale = np.abs(G) * 255 / np.max(np.abs(G)).copy()
-    cv2.imwrite("../img/out/q_32_1.png", G_scale)
+    cv2.imwrite("../img/out/q_32_1.jpg", G_scale)
 
     img_out = idft(G)
     img_out_clip = np.clip(img_out, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_32_2.png", img_out_clip)
+    cv2.imwrite("../img/out/q_32_2.jpg", img_out_clip)
 
 
 if __name__ == '__main__':

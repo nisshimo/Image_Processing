@@ -17,10 +17,10 @@ def main():
     img_in = cv2.imread("../img/in/imori_dark.jpg").astype(np.float64)
     img_ = hist_normalize(img_in)
     img_out = np.clip(img_, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_21_1.png", img_out)
+    cv2.imwrite("../img/out/q_21_1.jpg", img_out)
     fig, ax = plt.subplots()
     hist_of_pixels(img_out, ax)
-    plt.savefig("../img/out/q_21_2.png")
+    plt.savefig("../img/out/q_21_2.jpg")
 
 
 if __name__ == '__main__':

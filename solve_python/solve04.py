@@ -34,7 +34,7 @@ def main():
     img_in = cv2.imread("../img/in/imori.jpg").astype(np.float64)
     img_ = binarize_otsu(img_in)
     img_out = np.clip(img_, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_04.png", img_out)
+    cv2.imwrite("../img/out/q_04.jpg", img_out)
 
 
 if __name__ == '__main__':

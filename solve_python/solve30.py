@@ -42,11 +42,11 @@ def main():
     img_in = cv2.imread("../img/in/imori.jpg").astype(np.float64).copy()
     img_1 = affine_conversion(img_in, A=30)
     img_out_1 = np.clip(img_1, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_30_1.png", img_out_1)
+    cv2.imwrite("../img/out/q_30_1.jpg", img_out_1)
 
     img_2 = rotate(img_in, A=30)
     img_out_2 = np.clip(img_2, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_30_2.png", img_out_2)
+    cv2.imwrite("../img/out/q_30_2.jpg", img_out_2)
 
 
 if __name__ == '__main__':

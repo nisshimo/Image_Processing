@@ -29,7 +29,7 @@ def main():
     img_in = cv2.imread("../img/in/imori_noise.jpg").astype(np.float64)
     img_ = gaussian_filter(img_in)
     img_out = np.clip(img_, 0, 255).astype(np.uint8)
-    cv2.imwrite("../img/out/q_09.png", img_out)
+    cv2.imwrite("../img/out/q_09.jpg", img_out)
 
 
 
