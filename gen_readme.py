@@ -14,7 +14,7 @@ with open("README.md", mode='w') as f:
     for i, subject in enumerate(subjects):
         marker = marker_default if i < n_done else ""
         link_code = "[{}](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve{}.py)".format(marker, str(i+1).zfill(2))
-        link_png = "[{}](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_{}.png)".format(marker, str(i+1).zfill(2))
-        f.write("| {} | {} | {} | {} |\n".format(i+1, subject, link_code, link_png))
+        link_jpg = "[{}](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_{}.jpg)".format(marker, str(i+1).zfill(2))
+        f.write("| {} | {} | {} | {} |\n".format(i+1, subject, link_code, link_jpg))
 
     f.write("\n## 参考および引用元\n[画像処理100本ノックを作ったった(Qiita)](https://qiita.com/yoyoyo_/items/2ef53f47f87dcf5d1e14) <br>[画像処理100本ノック!!(github)](https://github.com/yoyoyo-yo/Gasyori100knock) <br>\n")
