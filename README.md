@@ -46,7 +46,7 @@
 | 38 | JPEG圧縮 (Step.2)DCT+量子化 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve38.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_38.jpg) |
 | 39 | JPEG圧縮 (Step.3)YCbCr表色系 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve39.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_39.jpg) |
 | 40 | JPEG圧縮 (Step.4)YCbCr+DCT+量子化 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve40.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_40.jpg) |
-| 41 | Cannyエッジ検出 (Step.1) エッジ強度 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve41.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_41.jpg) |
+| 41 | Cannyエッジ検出 (Step.1) エッジ強度 | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve41.py) | [✓](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_41.jpg) |
 | 42 | Cannyエッジ検出 (Step.2) 細線化 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve42.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_42.jpg) |
 | 43 | Cannyエッジ検出 (Step.3) ヒステリシス閾処理 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve43.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_43.jpg) |
 | 44 | Hough変換・直線検出 (Step.1) Hough変換 | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/solve_python/solve44.py) | [](https://github.com/HirokiNishimoto/Image_Processing/blob/master/img/out/q_44.jpg) |
