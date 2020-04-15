@@ -4,6 +4,8 @@ import numpy as np
 
 # Q_9
 def gaussian_filter(img, stride=3, sigma=1.3):
+    H, W, C = img.shape
+
     K = np.zeros((stride, stride))
     stride_range = range(int(-stride/2), int(stride/2+1))
     for x in stride_range:
@@ -13,9 +15,9 @@ def gaussian_filter(img, stride=3, sigma=1.3):
 
     out = img.copy()
 
-    for i in range(img.shape[0]):
-        for j in range(img.shape[1]):
-            for k in range(3):
+    for i in range(H):
+        for j in range(W):
+            for k in range(C):
                 subregion = np.zeros_like(K, dtype=np.float64)
                 for x in stride_range:
                     for y in stride_range:
