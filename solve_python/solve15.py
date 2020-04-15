@@ -4,40 +4,39 @@ from solve02 import RGB2GRAY
 
 
 # Q_15
-def prewitt_filter(img, stride=3, mode='v'):
-    
+def sobel_filter(img):
     if len(img.shape) == 3:
-        img = RGB2GRAY(img).copy()
+        assert img.shape[2] == 1
+        img = np.squeeze(img, axis=-1)
+    H, W = img.shape
 
-    stride_range = range(int(-stride/2), int(stride/2+1))
+    Kv = [[1., 2., 1.], [0., 0., 0.], [-1., -2., -1.]]
+    Kh = [[1., 0., -1.], [2., 0., -2.], [1., 0., -1.]]
+    stride = 3
 
-    Kv = np.array([[1, 1, 1], [0, 0, 0], [-1, -1, -1]])
-    Kh = np.array([[1, 0, -1], [1, 0, -1], [1, 0, -1]])
+    pad = stride // 2
+    img_pad = np.pad(img, pad_width=pad, mode='constant')
 
-    out = img.copy()
-    for i in range(img.shape[0]):
-        for j in range(img.shape[1]):
-            subregion = np.zeros((stride, stride))
-            for x in stride_range:
-                for y in stride_range:
-                    if 0 <= i + x < img.shape[0] and 0 <= j + y < img.shape[1]:
-                        subregion[x+1][y+1] = img[i+x, j+y]
-            assert mode in ['v', 'h']
-            if mode == 'v':
-                out[i, j] = np.sum(Kv * subregion)
-            else:
-                out[i, j] = np.sum(Kh * subregion)
+    out = np.zeros((H + pad * 2, W + pad * 2), dtype=np.float64)
 
-    return out
+    out_v = out.copy()
+    out_h = out.copy()
+
+    for x in range(W):
+        for y in range(H):
+            out_v[pad + y, pad + x] = np.sum(Kv * img_pad[y:y+stride, x:x+stride])
+            out_h[pad + y, pad + x] = np.sum(Kh * img_pad[y:y+stride, x:x+stride])
+    return out_v, out_h
 
 
 def main():
     img_in = cv2.imread("../img/in/imori.jpg").astype(np.float64)
 
-    for mode in ['v', 'h']:
-        img_ = prewitt_filter(img_in, mode=mode)
-        img_out = np.clip(img_, 0, 255).astype(np.uint8)
-        cv2.imwrite("../img/out/q_15_{}.jpg".format(mode), img_out)
+    img_v, img_h = sobel_filter(RGB2GRAY(img_in))
+    img_clip_v = np.clip(img_v, 0, 255).astype(np.uint8)
+    img_clip_h = np.clip(img_h, 0, 255).astype(np.uint8)
+    cv2.imwrite("../img/out/q_15_v.jpg", img_clip_v)
+    cv2.imwrite("../img/out/q_15_h.jpg", img_clip_h)
 
 
 if __name__ == '__main__':
