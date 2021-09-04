@@ -26,6 +26,8 @@ def sobel_filter(img):
         for y in range(H):
             out_v[pad + y, pad + x] = np.sum(Kv * img_pad[y:y+stride, x:x+stride])
             out_h[pad + y, pad + x] = np.sum(Kh * img_pad[y:y+stride, x:x+stride])
+    out_v = out_v[pad:pad+H, pad:pad+W]
+    out_h = out_h[pad:pad+H, pad:pad+W]
     return out_v, out_h
 
 
